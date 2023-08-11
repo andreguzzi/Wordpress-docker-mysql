@@ -21,8 +21,6 @@ services:
       WORDPRESS_DB_NAME: wordpress
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
-      PHP_UPLOAD_MAX_FILESIZE: 256M
-      PHP_POST_MAX_SIZE: 256M
   phpmyadmin:
     image: phpmyadmin
     ports:
