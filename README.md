@@ -1,11 +1,16 @@
 # Wordpress-docker-mysql
 
-Iniciar os Containers
+Configuração do ambiente
+ * Wordpress
+ * Mysql
+ * PhpMyAdmin
+
+Para iniciar os Containers...
 
 Abra o terminal e navegue até o diretório onde você salvou o arquivo docker-compose.yml. 
 Em seguida, execute o seguinte comando para iniciar os containers:
 
-bash
+no bash
 docker-compose up -d
 
 Isso iniciará os serviços definidos no arquivo docker-compose.yml. 
@@ -23,3 +28,7 @@ Senha do banco de dados: a senha que você definiu no arquivo docker-compose.yml
 Agora você tem um ambiente Docker com WordPress, MySQL e phpMyAdmin configurados! 
 Lembre-se de que este é um ambiente de desenvolvimento e não é recomendado para uso em produção. 
 Certifique-se de proteger suas senhas adequadamente em um ambiente de produção.
+
+--------------
+Caso estiver no Mac, alterar a imagem do mysql no arquivo docker-compose.yml para image: arm64v8/mysql
+
