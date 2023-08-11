@@ -15,6 +15,7 @@ services:
       - "8000:80"
     volumes:
       - wp_data:/var/www/html
+      - ./php-config:/usr/local/etc/php/conf.d
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: wordpress
